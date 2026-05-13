@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inventario | Deportes BOG</title>
+<link rel="stylesheet" href="CSS/estilo.css">
+<style>
+.inventario-form {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.12);
+    padding: 18px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+.inventario-form h3 {
+    margin-bottom: 12px;
+    color: white;
+}
+.inventario-form form {
+    display: grid;
+    gap: 14px;
+}
+.inventario-form input,
+.inventario-form select {
+    width: 100%;
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.18);
+    background: #111;
+    color: white;
+}
+.inventario-form .form-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+.btn.secondary {
+    background: #777;
+}
+.status {
+    margin-top: 16px;
+    padding: 12px 14px;
+    border-radius: 10px;
+    color: white;
+    display: none;
+}
+.status.success {
+    background: #1c7c3c;
+}
+.status.error {
+    background: #a32a2a;
+}
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+    <h2 class="logo">Deportes BOG</h2>
+
+   <div class="menu">
+    <a href="dashboard.html" class="menu-link">Dashboard</a>
+    <a href="inventario.html" class="menu-link active">Inventario</a>
+    <a href="usuario.html" class="menu-link">Usuario</a>
+</div>
+
+    <div class="sidebar-footer">
+        <p><b>Usuario</b><br>Administrador</p>
+        <small>correo@gmail.com</small>
+        <a href="index.html" class="logout">Cerrar sesión</a>
+    </div>
+</div>
+
+
+<div class="main">
+
+    <h2>Gestión de Inventario</h2>
+    <p class="subtitle">Administra el inventario de productos deportivos</p>
+
+    <div class="inventario-filters">
+        <input type="text" placeholder="Buscar Nombre o SKU..." class="inventario-input" id="busqueda-input">
+        <select class="inventario-select" id="categoria-select">
+            <option value="">Todas las Categorías</option>
+            <option>Fútbol</option>
+            <option>Tenis</option>
+            <option>Calzado</option>
+            <option>Gimnasio</option>
+            <option>Boxeo</option>
+        </select>
+    </div>
+
+    <section class="inventario-form">
+        <h3 id="form-title">Registrar producto</h3>
+        <form id="producto-form">
+            <input type="text" id="nombre" placeholder="Nombre del producto" required>
+            <input type="text" id="categoria" placeholder="Categoría" required>
+            <input type="number" id="stock" placeholder="Stock" min="0" required>
+            <input type="number" id="precio" placeholder="Precio" min="0" step="0.01" required>
+            <div class="form-actions">
+                <button class="btn" type="submit" id="guardar-btn">Guardar producto</button>
+                <button class="btn secondary" type="button" id="cancelar-btn">Cancelar edición</button>
+            </div>
+            <input type="hidden" id="producto-id">
+        </form>
+    </section>
+
+    <div class="inventario-table">
+        <table>
+            <thead>
+                <tr>
+                    <th>SKU</th>
+                    <th>Producto</th>
+                    <th>Categoría</th>
+                    <th>Stock</th>
+                    <th>Precio</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="productos-body">
+                <tr>
+                    <td colspan="6" style="text-align:center; color:#ddd;">Cargando productos...</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="status" class="status"></div>
+
+</div>
+
+<script src="inventario.js"></script>
+
+</body>
+</html>

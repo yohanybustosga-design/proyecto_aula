@@ -1,0 +1,199 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>DEPORTIVOS BOG</title> 
+    <meta name="description" content="Bienvenidos a la mejor calidad.">
+    <meta name="keywords" content="SOCCER, TENIS, BOXEO">
+    <meta name="author" content="Yohany bustos">
+    <link rel="icon" href="img/1.png" type="img/png" sizes="8x8">
+    <link rel="stylesheet" href="CSS/estilo.css">
+    <script src="https://kit.fontawesome.com/9d1a86738f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/estilo.css">
+    
+</head>
+
+<style>
+ 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+body{
+    background:black;
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
+}
+
+
+.header{
+    background:#3d07d3;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:20px 15px;
+}
+
+.logo-container{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo-container img{
+    width:40px;
+    height:40px;
+}
+
+.menu{
+    font-size:38px;
+    cursor:pointer;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:40px;
+    margin-top:-3px;
+}
+
+.menu i{
+    line-height:1;
+}
+
+.container{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+
+.card{
+    background:#450edec4;
+    padding:30px;
+    border-radius:15px;
+    width:320px;
+    text-align:center;
+    color:white;
+}
+
+
+.card img{
+    width:70px;
+    margin-bottom:10px;
+}
+
+
+.card h2{
+    margin-bottom:20px;
+}
+
+
+.input{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:none;
+    border-radius:8px;
+    background:#bfbfbf;
+}
+
+
+.options{
+    display:flex;
+    justify-content:space-between;
+    font-size:12px;
+    margin:10px 0;
+}
+
+.btn{
+    display: inline-block;   
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    background: linear-gradient(90deg,#3b3bff,#6a5cff);
+    color: white;
+    font-weight: bold;
+    text-decoration: none;  
+    text-align: center;     
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    opacity: 0.8;
+    transform: scale(1.03); 
+}
+
+
+.register{
+    margin-top:15px;
+    font-size:13px;
+}
+
+
+.footer{
+    background:#440ddb;
+    color:white;
+    text-align:center;
+    padding:10px;
+}
+</style>
+</head>
+
+<body>
+
+
+<div class="header">
+    <div class="logo-container">
+        <img src="IMG/2.png" alt="logo">
+        <h2>DEPORTIVO BOG</h2>
+    </div>
+    <div class="menu">☰</div>
+</div>
+
+<!-- LOGIN -->
+<div class="container">
+    <div class="card">
+
+        <h2>Iniciar Sesión</h2>
+
+        <form action="dashboard.html">
+
+            <input type="email" class="input" placeholder="Correo electrónico" required>
+
+            <input type="password" class="input" placeholder="Contraseña" required>
+
+            <div class="options">
+                <label><input type="checkbox"> Recordarme</label>
+                <a href="#" style="color:white;">¿Olvidaste tu contraseña?</a>
+            </div>
+
+            <button type="submit" class="btn">Ingresar</button>
+
+        </form>
+
+        <div class="register">
+            ¿Todavía no tienes una cuenta?<br>
+            <a href="#" style="color:#ddd;">Regístrate</a>
+        </div>
+
+    </div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+    © 2026 Deportivo BOG. Todos los derechos reservados.
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
+

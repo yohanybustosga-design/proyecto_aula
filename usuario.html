@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gestión de Usuario</title>
+<link rel="stylesheet" href="CSS/estilo.css">
+</head>
+
+<body>
+
+
+<div class="sidebar">
+    <h3>Deportes BOG</h3>
+
+    <div class="menu">
+    <a href="dashboard.html" class="menu-link">Dashboard</a>
+    <a href="inventario.html" class="menu-link">Inventario</a>
+    <a href="usuario.html" class="menu-link active">Usuario</a>
+</div>
+
+    <div class="user-box">
+        <p>Usuario <b>Administrador</b></p>
+        <small>bustosgaviriayohany@gmail.com</small><br><br>
+        <a href="index.html" class="logout">Cerrar sesión</a>
+    </div>
+</div>
+
+<!-- MAIN -->
+<div class="main">
+
+    <div class="header">
+        <h1>Gestión de Usuario</h1>
+        <button class="add">Agregar Usuario</button>
+    </div>
+
+    <!-- CARDS -->
+    <div class="cards">
+        <div class="card">Usuarios<br><b>5</b></div>
+        <div class="card">Usuarios activos<br><b>4</b></div>
+        <div class="card">Usuarios Inactivos<br><b>1</b></div>
+        <div class="card">Administrador<br><b>1</b></div>
+    </div>
+
+    <!-- FILTROS -->
+    <div class="filters">
+        <input type="text" placeholder="Buscar por Nombre o Email...">
+        <select>
+            <option>Todos los Roles</option>
+            <option>Administrador</option>
+            <option>Gerente</option>
+            <option>Empleado</option>
+        </select>
+    </div>
+
+    <!-- TABLA -->
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Email</th>
+                <th>Departamento</th>
+                <th>Teléfono</th>
+                <th>Estado</th>
+                <th>Rol</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>Yohany</td>
+                <td>bustosgaviriayohany@gmail.com</td>
+                <td>Administración</td>
+                <td>+57 3228208051</td>
+                <td>Activo</td>
+                <td><span class="tag admin">Administrador</span></td>
+                <td>
+                    <button>Editar</button>
+                    <button class="delete">Borrar</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Juan</td>
+                <td>juan.perez@sport.com</td>
+                <td>Inventario</td>
+                <td>+57 3001234567</td>
+                <td>Activo</td>
+                <td><span class="tag gerente">Gerente</span></td>
+                <td>
+                    <button>Editar</button>
+                    <button class="delete">Borrar</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Maria</td>
+                <td>maria.gonzales@sport.com</td>
+                <td>Ventas</td>
+                <td>+57 3012345678</td>
+                <td>Activo</td>
+                <td><span class="tag empleado">Empleado</span></td>
+                <td>
+                    <button>Editar</button>
+                    <button class="delete">Borrar</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Carlos</td>
+                <td>carlos.rodriguez@sport.com</td>
+                <td>Almacén</td>
+                <td>+57 3023456789</td>
+                <td>Activo</td>
+                <td><span class="tag empleado">Empleado</span></td>
+                <td>
+                    <button>Editar</button>
+                    <button class="delete">Borrar</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Carlos</td>
+                <td>carlos.perez@sport.com</td>
+                <td>Almacén</td>
+                <td>+57 3023478789</td>
+                <td>Inactivo</td>
+                <td><span class="tag empleado">Empleado</span></td>
+                <td>
+                    <button>Editar</button>
+                    <button class="delete">Borrar</button>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+
+</div>
+
+<script src="usuario.js"></script>
+</body>
+</html>

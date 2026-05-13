@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard Deportes BOG</title>
+<link rel="stylesheet" href="CSS/estilo.css">
+</head>
+
+<body class="dashboard">
+
+
+<div class="sidebar">
+    <h2><b>Deportes BOG</b></h2>
+
+    <div class="menu">
+    <a href="dashboard.html" class="menu-link active">Dashboard</a>
+    <a href="inventario.html" class="menu-link">Inventario</a>
+    <a href="usuario.html" class="menu-link">Usuario</a>
+</div>
+
+    <div class="sidebar-footer"> 
+        <p><b>Usuario</b><br>Administrador</p>
+        <small>correo@gmail.com</small>
+        <a href="index.html" class="logout">Cerrar sesión</a>
+    </div>
+</div>
+
+
+<div class="main">
+    <h2>Dashboard</h2>
+    <p>Bienvenidos al sistema de gestión de inventario deportivo</p>
+
+    
+    <div class="dashboard-cards">
+        <div class="dashboard-card">
+            <p>Total productos</p>
+            <h3>1.248</h3>
+            <p>+12% vs mes anterior</p>
+        </div>
+
+        <div class="dashboard-card">
+            <p>Valor Anterior</p>
+            <h3>$125.430</h3>
+            <p>+8% vs mes anterior</p>
+        </div>
+
+        <div class="dashboard-card">
+            <p>Productos bajo stock</p>
+            <h3>23</h3>
+            <p>-5 vs mes anterior</p>
+        </div>
+    </div>
+
+    
+    <div class="dashboard-table">
+        <h3>Productos con stock bajo</h3>
+
+        <div class="dashboard-row">
+            <span>Balón de Futbol Profesional</span>
+            <span>Precio 23.2 | Min.18</span>
+        </div>
+
+        <div class="dashboard-row">
+            <span>Raqueta de Tenis Wilson</span>
+            <span>Precio 34.2 | Min.20</span>
+        </div>
+
+        <div class="dashboard-row">
+            <span>Guantes de Boxeos</span>
+            <span>Precio 34.2 | Min.28</span>
+        </div>
+    </div>
+
+</div>
+
+<script src="dashboard.js"></script>
+</body>
+</html>  
