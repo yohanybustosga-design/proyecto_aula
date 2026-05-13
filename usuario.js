@@ -10,7 +10,7 @@ let usuarios = [];
 function obtenerId(usuario) {
     return usuario.id || usuario._id || '';
 }
-
+ 
 function asignarDepartamento(edad) {
     if (edad < 25) return 'Ventas';
     if (edad < 35) return 'Inventario';
