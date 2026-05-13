@@ -9,7 +9,7 @@ function formatearMoneda(valor) {
         currency: 'COP',
         maximumFractionDigits: 0
     }).format(valor);
-}
+} 
 
 function renderizarLowStock(productos) {
     const contenido = ['<h3>Productos con stock bajo</h3>'];

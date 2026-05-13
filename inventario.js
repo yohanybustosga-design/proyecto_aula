@@ -13,7 +13,7 @@ const statusBox = document.getElementById('status');
 const busquedaInput = document.getElementById('busqueda-input');
 const categoriaSelect = document.getElementById('categoria-select');
 const formTitle = document.getElementById('form-title');
-
+ 
 let productos = [];
 
 function mostrarEstado(mensaje, tipo = 'success') {
